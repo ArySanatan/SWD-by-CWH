@@ -1,0 +1,55 @@
+/* element selector */
+div {
+  background-color: red;
+}
+
+/* class Selector */
+.red {
+  background-color: green;
+}
+
+/* id selector */
+#blue {
+  background-color: blue;
+}
+
+/* child selector */
+div > p {
+  background-color: darkgoldenrod;
+}
+
+/* decendent selector */
+div p {
+  color: blue;
+  background-color: brown;
+}
+
+/* universal selector */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* pseudo selector */
+a:visited{
+    color: wheat;
+}
+
+a:link{
+    color: red;
+}
+
+a:active{
+    color: blueviolet;
+}
+
+a:hover{
+    color: firebrick;
+}
+p:first-child{
+    color: khaki;
+}
+
+.dev{
+  color: aliceblue;
+}

@@ -1,0 +1,13 @@
+/* td{
+  border: 2px solid black; */
+
+th,td{
+  border: 2px solid black;
+}
+
+caption{
+  background-color: aqua;
+  align-self: start;
+  align-content: safe;
+  animation: alternate 2s 12 1 iteration-count direction fill-mode;
+}

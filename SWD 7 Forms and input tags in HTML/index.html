@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and input tag</title>
+    <!--<link rel="stylesheet" href="styles.css" />-->
+  </head>
+  
+  <style>
+    h1{
+      background-color: red;
+    }
+  </style>
+  <body>
+    <h1> Form </h1>
+     <form action="post">
+       <p>
+         <div>
+            <label for="Username">Enter your Username</label>
+       <input type="text" id="Username" name="Username" placeholder="Enter your name"
+      
+         </div>
+        
+         <div>
+           <label for="gender">Gender:</label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+         </div>
+       </p>
+       
+       <p>
+         <label> fruits:</label>
+       <select name="fruits">
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="cherry">Cherry</option>
+</select>
+       </p>
+     </form>
+      <!--<script src="script.js"></script>-->
+  </body>
+</html>
