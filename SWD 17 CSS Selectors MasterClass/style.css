@@ -50,6 +50,9 @@ p:first-child{
     color: khaki;
 }
 
+body{
+  color: red;
+}
 .dev{
   color: aliceblue;
 }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Specificity & Cascade</title>
+    <style>
+      h1 {
+        color: aqua;
+      }
+
+      /* the specificity of this selector = 1+10=11 */
+      h1.yellow {
+        color: yellow !important;
+      }
+
+      .cred {
+        color: red;
+      }
+
+      .cpurple {
+        color: purple;
+      }
+      [data-x="a"] {
+        background-color: aqua;
+        color: #000;
+      }
+      /* the specificity of this selector = 1+10+10+10 + 10 = 41*/
+      a.harryclass.rohan-class[href]:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="yellow cred cpurple" data-x="a">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id iure nisi
+        nam placeat rem, voluptas, enim reiciendis animi harum dolorem neque!
+      </h1>
+      <h2>
+        Inline style > ID selector > Class or Attribute Selector > Element
+        Selector > Universal Selector.
+      </h2>
+
+      <h3>Specificity Calculation</h3>
+      <p>
+        To calculate specificity, assign a value to each part of the selector:
+      </p>
+      <p>Universal Selector: 0</p>
+      <p>Element selectors and pseudo-elements: 1</p>
+      <p>Class selectors, attribute selectors, and pseudo-classes: 10</p>
+      <p>ID selectors: 100</p>
+      <p>Inline styles: 1000</p>
+      <p>
+        Then, add up the values of all the parts in the selector. Here is an
+        example
+      </p>
+
+      <h1 id="title" class="h1">CodeWithHarry</h1>
+    </div>
+  </body>
+</html>
