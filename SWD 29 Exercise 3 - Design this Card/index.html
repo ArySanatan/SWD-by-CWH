@@ -1,0 +1,97 @@
+<!-- Card.png is a file which contains a card image. Write html and css code to design this Card -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(200, 229, 255);
+      }
+      .main {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(255, 255, 255);
+        width: 300px;
+        height: 480px;
+        border: 1px solid lightblue;
+        border-radius: 15px;
+        margin: auto;
+        position: relative;
+        top: 100px;
+      }
+
+      .ain {
+        width: 280px;
+        height: 230px;
+        position: relative;
+        margin: auto;
+        padding: 0;
+        border: 10px solid rgb(255, 255, 255);
+        border-radius: 20px;
+      }
+      .point p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15pt;
+        display: inline;
+        position: relative;
+        left: 30px;
+        margin: 5px;
+        border: 1px solid rgb(165, 167, 167);
+        border-radius: 20px;
+        color: rgb(165, 167, 167);
+        background-color: white;
+      }
+      .body{
+        background-color: white;
+      }
+      h2 {
+        background-color: white;
+        padding: 0;
+        margin: 20px;
+      }
+      .body p{
+        background-color: white;
+        margin: 20px;
+        color: rgb(159, 160, 160);
+        
+      }
+      .readmore p{
+        position: absolute;
+        color: rgb(135, 135, 255);
+        width: 110px;
+        height: 20px;
+        text-align: center;
+        text-transform: capitalize;
+        left: 28%;
+        margin: 10px;
+        border-radius: 10px;
+        border-color: rgb(255, 255, 255);
+        bottom: 5px;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <image src="Screenshot (11).png" class="ain"></image>
+      <div class="point" style="background-color: white">
+        <p>Nature</p>
+        <p>Lake</p>
+      </div>
+      <div class="body">
+        <h2>Lago di Braies</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+          temporibus ea deserunt quia iure eos tenetur? Corporis, aperiam.
+        </p>
+      </div>
+      <div class="readmore">
+        <p>Read More</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 433px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+        .box1{
+            background-color: aqua;
+            /* position: absolute; */
+            /* position: sticky; */
+            
+           /* /* z-index: 1;  */
+           /* top: 0px; */ 
+        }
+        .box2{
+            background-color: #145241;
+            position: relative;
+            left: 34px;
+            top: 56px;
+            /* Exception: transform,filter, or perspective properties can also make an element appear as positioned */
+            
+        }
+        .box3{
+            background-color: red;
+            position: fixed;
+            
+            
+        }
+        .box4{
+            background-color: green;
+            position: relative;
+            top: 0px;
+            width: 54px;
+
+
+        }
+        .parent{
+            margin: 5px;
+            border: 2px solid;
+            /* position: absolute; */
+            /* transform: translate(0); */
+            /* perspective: 0em; */
+        }
+    </style>
+</head>
+<body>
+   <div class="parent">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+   </div>
+    
+</body>
+</html>
