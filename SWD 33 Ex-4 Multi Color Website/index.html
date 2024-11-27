@@ -1,0 +1,67 @@
+<!-- navbar with diffent color theme in changing a variable -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav {
+        display: flex;
+        justify-content: right;
+      }
+
+      .item {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        padding: 7px;
+        margin: 4px;
+        border: 2px solid black;
+        border-radius: 20px;
+      }
+
+      body {
+        background-color: lightgray;
+      }
+      .item:hover {
+        background-color: rgb(233, 244, 190);
+        text-transform: capitalize;
+        }
+
+        @media only screen and (orientation:portrait){
+            .item {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        padding: 7px;
+        margin: 4px;
+        color: wheat;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 20px;
+      }
+
+      body {
+        background-color: rgb(55, 55, 55);
+      }
+      .item:hover {
+        background-color: rgb(41, 44, 33);
+        text-transform: capitalize;
+        }
+
+        }
+      
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="item home">Home</div>
+      <div class="item about">About</div>
+      <div class="item login">Login</div>
+      <!-- <div class="item Dark">Dark Mode</div> -->
+    </div>
+  </body>
+</html>
